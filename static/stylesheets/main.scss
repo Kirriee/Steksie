@@ -6,8 +6,8 @@
 
 
 // 2. Layout-related sections
-
-
 @import 'layout/footer';
 @import 'layout/navbar';
 
+// 2. Import components
+@import 'components/map';

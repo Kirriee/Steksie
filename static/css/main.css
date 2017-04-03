@@ -563,5 +563,14 @@ html {
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #82ca9c; } }
 /* END STYLING NAVBAR */
+#map {
+  width: 100%;
+  height: 50%; }
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
 
 /*# sourceMappingURL=main.css.map */
