@@ -209,9 +209,8 @@ app.get('/grabplant', (request, response) => {
 	})
 })
 
-// use port 3000 unless there exists a preconfigured port
-var port = process.env.port || 3000;
 
-app.listen(port, function(){
-	console.log("The server has started on port " + port)
+
+app.listen(process.env.PORT || 3000, function(){
+	console.log("The server has started")
 })
