@@ -8,8 +8,8 @@ block content
 					form.register(action='/login', method='post')
 						
 						h2 Welkom terug! 
-						input.form-input(type='email', name='email' placeholder='Wat is je email?' value='admin@mail.com' required autofocus)
-						input.form-input(type='password', name='password', placeholder='Wat is je wachtwoord?' value='123')
+						input(type='email', name='email' placeholder='Wat is je email?' value='admin@mail.com' required autofocus)
+						input(type='password', name='password', placeholder='Wat is je wachtwoord?' value='123')
 						button.form-button-green(type='submit') Verzend
 						p.message Nog niet geregistreerd?
 							a(href="/signup")  Klik hier

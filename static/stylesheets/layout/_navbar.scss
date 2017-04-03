@@ -1,0 +1,57 @@
+/*BEGIN STYLING NAVBAR*/
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius:0;
+}
+.navbar{
+  margin-bottom:0px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: #82ca9c;
+  background-color:transparent;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #000;
+  font-size:14px;
+  font-weight:600;
+  text-transform:uppercase;
+}
+.navbar-default .navbar-nav li a :hover{
+  color: $green-color;
+}
+.navbar-default .collapse .login a{
+  color: $green-color;
+  border: 1px solid $green-color;
+  border-radius: 20px;
+  padding: 4px 30px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 30px;
+  display:inline-block;
+  overflow:hidden;
+}
+.navbar-default .collapse .login:hover a{
+  background-color: rgba(0, 173, 62, 0.75);
+  color:#fff;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: $green-color;
+  background-color: transparent;
+}
+.navbar-brand{
+  margin-top:-5px; 
+
+  img{
+    display: inline-block;
+    max-width: 5%;
+    vertical-align: 0em;
+  }
+}
+
+.navbar-toggle{
+  border: none;
+}
+
+/* END STYLING NAVBAR */

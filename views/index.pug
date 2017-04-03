@@ -2,8 +2,7 @@ extends ./partials.pug
 block content
 
 
-    header#home.home
-        
+    header.home
             .container.text-center
                 .row
                     .home-wrapper
@@ -12,19 +11,14 @@ block content
                                 h1#homeHeading Wil jij je eigen stekje?
                                 hr
                                 h2 Bekijk of iemand in je buurt een stekje wilt delen!
-
-                               
-
                                 form.adress(action='/', method='post')
                                     select(name='homecity')
                                         option(value='Amsterdam' name='Amsterdam') Amsterdam
                                         option(value='Rotterdam' name= 'Rotterdam') Rotterdam
                                         option(value='Utrecht' name='Utrechts') Utrecht
-                                        //- input.form-input(type="text", name="homeadress" placeholder="type your adress")
-                                    button.form-button(type="submit" name="buurtbutton") bekijk je buurt
+                                    button.form-button(type="submit" name="buurtbutton") Bekijk je buurt
 
-    section
-        .testimonials   
+    section.testimonials   
             .container
               .row
                 .col-md-offset-2.col-md-8.text-center
@@ -43,47 +37,42 @@ block content
                       .item.active
                         blockquote
                           .row
-                            //- .col-sm-3.text-center
-                            //-   img.img-circle(src='../img/arthur.jpg', style='width: 100px;height:100px;')
+                            .col-sm-3.text-center
+                              img.img-circle(src='/img/arthur.jpg', style='width: 100px;height:100px;')
                             .col-sm-9
                               p.testimonial-description
                                 | Ik voel me weer helemaal sexy door Steksie.
                               |  
                               small.testimonial-title Arthur Poot 
-                                //- span   Product Owner
                       .item
                         blockquote
                           .row
                             .col-sm-3.text-center
-                              img.img-circle(src="/..static/img/lisa.jpg", style='width: 100px;height:100px;')
+                              img.img-circle(src="/img/lisa.jpg", style='width: 100px;height:100px;')
                             .col-sm-9
                               p.testimonial-description
                                 | Door Steksie voel ik me nooit meer alleen omdat ik omringt ben door planten. 
                               |  
                               small.testimonial-title Lisa Maagdenberg
-                                //- span   Back-end Web Developer
-
                       .item
                         blockquote
                           .row
-                            //- .col-sm-3.text-center
-                            //-   img.img-circle(src='../img/arne.jpg', style='width: 100px;height:100px;')
+                            .col-sm-3.text-center
+                              img.img-circle(src='/img/arne.jpg', style='width: 100px;height:100px;')
                             .col-sm-9
                               p.testimonial-description
                                 | Steksie brengt niet alleen groen in mijn kamer maar ook in mijn hart
                               small.testimonial-title Arne Oldenhaven
-                                //- span     Kok
                       .item
                         blockquote
                           .row
-                            //- .col-sm-3.text-center
-                            //-   img.img-circle(src='../img/hajar.jpg', style='width: 100px;height:100px;')
+                            .col-sm-3.text-center
+                              img.img-circle(src='/img/hajar.jpg', style='width: 100px;height:100px;')
                             .col-sm-9
                               p.testimonial-description
                                 | Door Steksie heb ik mijn buren beter leren kennen
                               |  
                               small.testimonial-title Hajar Mokhtafa
-                                //- span    CEO 
                     a.left.carousel-control(data-slide='prev', href='#quote-carousel')
                       i.fa.fa-chevron-left
                     a.right.carousel-control(data-slide='next', href='#quote-carousel')

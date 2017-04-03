@@ -95,7 +95,7 @@ db.sync({
 	})
 	.then(function(user){
 		return user.createPlant ({
-			plantName: "pancakeplant",
+			plantName: "Pancakeplant",
 			description: "ik bied een stekje aan van mijn lieve pannekoekenplantje. Niet eetbaar.",
 			userId: "user.userId"
 		})

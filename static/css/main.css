@@ -1,69 +1,17 @@
 html,
 body {
-  font-size: 15px;
-  color: #565656;
   width: 100%;
   padding: 0;
   margin-left: 0;
   margin-right: 0;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 15px;
+  color: #565656; }
 
 ul {
   list-style-type: none; }
 
-/*BEGIN STYLING NAVBAR*/
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
-  border-radius: 0; }
-
-.navbar {
-  margin-bottom: 0px; }
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #82ca9c;
-  background-color: transparent; }
-
-.navbar-default .navbar-nav > li > a {
-  color: #000;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase; }
-
-.navbar-default .navbar-nav li a :hover {
-  color: #82ca9c; }
-
-.navbar-default .collapse .login a {
-  color: #82ca9c;
-  border: 1px solid #82ca9c;
-  border-radius: 20px;
-  padding: 4px 30px;
-  font-size: 12px;
-  margin-top: 10px;
-  margin-left: 30px;
-  display: inline-block;
-  overflow: hidden; }
-
-.navbar-default .collapse .login:hover a {
-  background-color: rgba(0, 173, 62, 0.75);
-  color: #fff; }
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #82ca9c;
-  background-color: transparent; }
-
-.navbar-brand {
-  margin-top: -5px; }
-  .navbar-brand img {
-    display: inline-block;
-    max-width: 5%;
-    vertical-align: 0em; }
-
-.navbar-toggle {
-  border: none; }
-
-/* END STYLING NAVBAR */
 /* BEGIN STYLING HOME SECTION */
 .home {
   background: url(../img/jungle3.jpg) no-repeat center center;
@@ -73,12 +21,12 @@ ul {
   -o-background-size: cover;
   -ms-background-size: cover; }
 
-.row {
-  margin-top: 50px; }
-
 .home-wrapper {
   padding: 150px 0px;
   overflow: hidden; }
+
+.row {
+  margin-top: 50px; }
 
 .home-content h1 {
   font-size: 48px;
@@ -103,7 +51,34 @@ form select {
   border: 2px solid #fff;
   background: #fff; }
 
+.adress {
+  margin-top: 50px; }
+  .adress .form-input {
+    padding: 18px 45px 18px 25px;
+    display: inline-block;
+    font-size: 16px;
+    width: 335px;
+    float: none;
+    border-style: none;
+    border: 2px solid #fff;
+    background: #ccc; }
+  .adress .form-button {
+    display: inline-block;
+    background-color: #ffa85e;
+    border: 3px solid #ffa85e;
+    padding: 14px 45px 16px 45px;
+    border-radius: 6px;
+    color: #fff;
+    margin-left: 11px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: normal;
+    width: auto; }
+  .adress .form-button-green {
+    background-color: #4CAF50; }
+
 /* ENDING STYLING HOME SECTION */
+/* BEGIN STYLING TESTIMONIALS SECTION */
 .testimonials {
   overflow: hidden;
   min-height: 600px;
@@ -112,24 +87,6 @@ form select {
   .testimonials h1 {
     padding: 45px 0px 0px 0; }
 
-#wrapper {
-  width: 995px;
-  padding: 0px;
-  margin: 0px auto;
-  font-family: helvetica;
-  position: relative; }
-
-#wrapper .baricon {
-  display: inline-block;
-  border-radius: 100%;
-  padding: 12px;
-  background-color: #38610B;
-  color: white; }
-
-#user-details {
-  display: none; }
-
-/* ENDING STYLING TESTIMONIAL SECTION */
 /* BEGIN STYLING CAROUSEL */
 #quote-carousel {
   padding: 0 10px 30px 10px;
@@ -175,7 +132,7 @@ form select {
 /* BEGIN STYLING QUOTES */
 .item blockquote {
   border-left: none;
-  margin: 0px 50px;
+  margin: 50px;
   padding: 10px; }
 
 .item blockquote img {
@@ -212,51 +169,94 @@ form select {
   margin-left: 10px; }
 
 /* ENDING STYLING QUOTES */
-/* MEDIA QUERIES */
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  #quote-carousel {
-    margin-bottom: 0;
-    padding: 0 40px 30px 40px; } }
-/* Small devices (tablets, up to 768px) */
-@media (max-width: 768px) {
-  /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
-  #quote-carousel .carousel-indicators {
-    bottom: -20px !important; }
+/* ENDING STYLING TESTIMONIAL SECTION */
+/* BEGIN LOGIN PAGE AND FORM*/
+section .loginpage {
+  background: url(../img/planten.jpeg) no-repeat center center;
+  padding: 0 0;
+  background-size: cover; }
 
-  #quote-carousel .carousel-indicators li {
-    display: inline-block;
-    margin: 0px 5px;
-    width: 15px;
-    height: 15px; }
+.login form {
+  position: relative;
+  background: #fff;
+  max-width: 360px;
+  margin: 100px auto;
+  padding: 20px 45px 45px 45px;
+  text-align: center;
+  border-bottom: 1px solid #c4c4c4;
+  border-radius: 0px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+  .login form h2 {
+    font-size: 28px;
+    margin-bottom: 20px; }
 
-  #quote-carousel .carousel-indicators li.active {
-    margin: 0px 5px;
-    width: 20px;
-    height: 20px; } }
-/* MEDIA QUERIES */
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  #quote-carousel {
-    margin-bottom: 0;
-    padding: 0 40px 30px 40px; } }
-/* Small devices (tablets, up to 768px) */
-@media (max-width: 768px) {
-  /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
-  #quote-carousel .carousel-indicators {
-    bottom: -20px !important; }
+.login input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  padding: 0 15px 2px;
+  font-size: 17px;
+  background: white;
+  border: 2px solid #ebebeb;
+  border-radius: 4px;
+  background: #f5f5f5; }
+  .login input:focus {
+    border-color: #82ca9c;
+    outline: none; }
 
-  #quote-carousel .carousel-indicators li {
-    display: inline-block;
-    margin: 0px 5px;
-    width: 15px;
-    height: 15px; }
+button {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 58px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #4CAF50;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer; }
+  button:active {
+    top: 1px;
+    outline: none; }
 
-  #quote-carousel .carousel-indicators li.active {
-    margin: 0px 5px;
-    width: 20px;
-    height: 20px; } }
-.category_container {
+.login .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 14px; }
+
+/* ENDING LOGIN PAGE AND FORM */
+/* BEGIN SIGNUP PAGE AND FORM */
+#form-wrapper {
+  width: 995px;
+  padding: 0px;
+  margin: 0px auto;
+  font-family: helvetica;
+  position: relative; }
+
+#previous, #submitsignup {
+  display: inline-block;
+  width: 48%;
+  margin-right: 5px; }
+
+#adress-details {
+  display: none; }
+
+.login-wrapper {
+  overflow: hidden;
+  min-height: 750px; }
+
+/* ENDING SIGNUP PAGE AND FORM */
+/* BEGIN OFFERS PAGE*/
+.header_title {
+  margin-bottom: 40px; }
+  .header_title p {
+    margin: 10px auto;
+    padding-bottom: 20px; }
+
+.city_container {
   width: 800px;
   display: block;
   margin: 0 auto;
@@ -281,45 +281,17 @@ form select {
   float: left;
   transition: all 0.4s ease-in-out; }
 
-.hide {
-  transform: scale(0);
-  width: 0;
-  padding: 0;
-  transition: all 0.4s ease-in-out; }
+.thumbnail {
+  margin-bottom: 15px;
+  border-top: none; }
 
-section .loginpage {
-  background: url(../img/planten.jpeg) no-repeat center center;
-  padding: 0 0;
-  background-size: cover; }
+.thumbnail > img {
+  max-width: 40%; }
 
-.yes {
-  margin-top: 20px;
-  max-width: 75%; }
+.img-responsive {
+  max-width: 25%; }
 
-.form-control {
-  border: 1px solid #DEDEDE;
-  height: 45px;
-  border-radius: 0px;
-  margin-right: -3px; }
-
-.head_title {
-  margin-bottom: 40px; }
-
-.head_title p {
-  margin: 10px auto;
-  padding-bottom: 20px; }
-
-/*For portfolio Section*/
-.portfolio {
-  background: url(../images/bg.png) no-repeat top center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  width: 100%;
-  overflow: hidden; }
-
-.community-edition {
+.plant-card {
   background: #fff;
   padding: 30px 30px 0px 30px;
   border: 1px solid #ececec;
@@ -332,35 +304,27 @@ section .loginpage {
   -moz-transition: .3s ease-in-out;
   -webkit-transition: .3s ease-in-out;
   margin-bottom: 50px; }
+  .plant-card i {
+    font-size: 60px;
+    color: #82ca9c;
+    margin-bottom: 20px; }
+  .plant-card h4 {
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 15px; }
+  .plant-card p {
+    color: #777777; }
 
-.community-edition:hover {
+.plant-card:hover {
   background: #82ca9c;
   color: #fff; }
-
-.community-edition:hover i {
-  color: #fff; }
-
-.community-edition:hover h4 {
-  color: #fff; }
-
-.community-edition:hover p {
-  color: #fff; }
-
-.community-edition i {
-  font-size: 60px;
-  color: #82ca9c;
-  margin-bottom: 20px; }
-
-.community-edition h4 {
-  font-size: 16px;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-top: 15px; }
-
-.community-edition p {
-  color: #777777; }
+  .plant-card:hover i {
+    color: #fff; }
+  .plant-card:hover h4, .plant-card:hover p {
+    color: #fff; }
 
 .offeredby {
   font-size: 12px;
@@ -370,168 +334,14 @@ section .loginpage {
 .offeredin {
   text-align: center; }
 
-.portfolio-wrapper2 {
-  margin-top: 25px; }
-
-.adress .form-input {
-  padding: 18px 45px 18px 25px;
-  display: inline-block;
-  font-size: 16px;
-  width: 335px;
-  float: none;
-  border-style: none;
-  border: 2px solid #fff;
-  background: #ccc; }
-
-.adress {
-  margin-top: 50px; }
-
-.adress .form-button {
-  display: inline-block;
-  background-color: #ffa85e;
-  border: 3px solid #ffa85e;
-  padding: 14px 45px 16px 45px;
-  border-radius: 6px;
-  color: #fff;
-  margin-left: 11px;
-  margin-right: 20px;
-  font-size: 20px;
-  font-weight: normal;
-  width: auto; }
-  .adress .form-button .form-button-green {
-    background-color: #4CAF50; }
-
-.login form {
-  position: relative;
-  background: #fff;
-  max-width: 360px;
-  margin: 100px auto;
-  padding: 20px 45px 45px 45px;
-  text-align: center;
-  border-bottom: 1px solid #c4c4c4;
-  border-radius: 0px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
-
-.login form h2 {
-  font-size: 28px;
-  margin-bottom: 20px; }
-
-.form-title {
-  margin: -25px -25px 25px;
-  padding: 15px 25px;
-  line-height: 35px;
-  text-align: center;
-  text-shadow: 0 1px rgba(255, 255, 255, 0.75);
-  background: #f7f7f7; }
-  .form-title:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 8px;
-    background: #c4e17f;
-    border-radius: 5px 5px 0 0;
-    background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-    background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-    background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-    background-image: linear-gradient(to inverse-side(left), #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4); }
-
-input {
-  font-family: inherit;
-  color: inherit; }
-
-.login input {
-  width: 100%;
-  height: 50px;
-  margin-bottom: 25px;
-  padding: 0 15px 2px;
-  font-size: 17px;
-  background: white;
-  border: 2px solid #ebebeb;
-  border-radius: 4px;
-  background: #f2f2f2; }
-  .login input:focus {
-    border-color: #62c2e4;
-    outline: none; }
-
-.login textarea {
-  resize: none;
-  width: 100%;
-  height: 10em;
-  margin-bottom: 25px;
-  padding: 0 15px 2px;
-  font-size: 17px;
-  background: white;
-  border: 2px solid #ebebeb;
-  border-radius: 4px; }
-  .login textarea:focus {
-    border-color: #62c2e4;
-    outline: none; }
-
-.login .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 14px; }
-
-button {
-  position: relative;
-  vertical-align: top;
-  width: 100%;
-  height: 58px;
-  padding: 0;
-  font-size: 22px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #4CAF50;
-  border: 0;
-  border-radius: 5px;
-  cursor: pointer; }
-  button:active {
-    top: 1px;
-    outline: none; }
-
-.login-wrapper {
-  overflow: hidden;
-  min-height: 750px; }
-
-.wrapper {
-  background: #76b852;
-  border: 1px solid #000; }
-
-.navbar #nav > .active > a {
-  color: red;
-  background: blue; }
-
-.modal-bodies {
-  position: relative;
-  perspective: 1000px; }
-
-.modal-body {
-  display: none; }
-
-.is-showing {
-  display: block; }
-
-#previous, #submitsignup {
-  display: inline-block;
-  width: 48%;
-  margin-right: 5px; }
-
 #meerinfo {
   font-size: 16px;
   width: 75%;
   height: 30px;
   margin: 10px 0px 30px 0px; }
 
-.thumbnail {
-  margin-bottom: 15px;
-  border-top: none; }
-
-.thumbnail > img {
-  max-width: 40%; }
-
+/* ENDING OFFERS PAGE */
+/* BEGIN GRABAPLANT PAGE */
 .grabaplant {
   margin-top: 50px;
   border: 1px solid #ccc;
@@ -540,24 +350,60 @@ button {
   transform: translate(-50%, -50%);
   border: 1px solid #ccc;
   left: 50%;
-  top: 50%; }
+  top: 25%; }
   .grabaplant p {
     color: black; }
 
-.container.grabplant p {
-  color: #565656;
-  background-color: transparent;
-  border-color: #565656;
-  border-radius: 0;
-  padding-top: 20px; }
+.buybutton {
+  margin-top: 20px;
+  max-width: 75%; }
 
-ul.filters {
-  color: #565656;
-  background-color: gray; }
+/* ENDING GRABAPLANT PAGE */
+/* BEGIN ADDPLANT PAGE */
+.login textarea {
+  resize: none;
+  width: 100%;
+  height: 10em;
+  margin-bottom: 25px;
+  padding: 0 15px 2px;
+  font-size: 17px;
+  background: #f5f5f5;
+  border: 2px solid #ebebeb;
+  border-radius: 4px; }
+  .login textarea:focus {
+    border-color: #82ca9c;
+    outline: none; }
 
-.img-responsive {
-  max-width: 25%; }
+/* ENDING ADDPLANT PAGE */
+/* MEDIA QUERIES */
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+  /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+  .item blockquote {
+    margin: 0px 40px; }
 
+  #quote-carousel .carousel-indicators {
+    bottom: -20px !important; }
+
+  #quote-carousel .carousel-indicators li {
+    display: inline-block;
+    margin: 0px 5px;
+    width: 15px;
+    height: 15px; }
+
+  #quote-carousel .carousel-indicators li.active {
+    margin: 0px 5px;
+    width: 20px;
+    height: 20px; }
+
+  .adress .form-button {
+    margin-top: 10px; } }
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #quote-carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px; } }
+/* END MEDIA QUERIES */
 html {
   position: relative;
   min-height: 100%; }
@@ -651,14 +497,57 @@ html {
 
   #footer ul.menu li a {
     line-height: 1.5em; } }
-#map {
-  width: 100%;
-  height: 50%; }
+/*BEGIN STYLING NAVBAR*/
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0; }
 
-/* Optional: Makes the sample page fill the window. */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0; }
+.navbar {
+  margin-bottom: 0px; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #82ca9c;
+  background-color: transparent; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.navbar-default .navbar-nav li a :hover {
+  color: #82ca9c; }
+
+.navbar-default .collapse .login a {
+  color: #82ca9c;
+  border: 1px solid #82ca9c;
+  border-radius: 20px;
+  padding: 4px 30px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 30px;
+  display: inline-block;
+  overflow: hidden; }
+
+.navbar-default .collapse .login:hover a {
+  background-color: rgba(0, 173, 62, 0.75);
+  color: #fff; }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #82ca9c;
+  background-color: transparent; }
+
+.navbar-brand {
+  margin-top: -5px; }
+  .navbar-brand img {
+    display: inline-block;
+    max-width: 5%;
+    vertical-align: 0em; }
+
+.navbar-toggle {
+  border: none; }
+
+/* END STYLING NAVBAR */
 
 /*# sourceMappingURL=main.css.map */

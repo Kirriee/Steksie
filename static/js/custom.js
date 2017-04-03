@@ -40,7 +40,7 @@ function show_next(id,nextid,bar)
   if(error==0)
   {
     document.getElementById("account-details").style.display="none";
-    document.getElementById("user-details").style.display="none";
+    document.getElementById("adress-details").style.display="none";
     
     $("#"+nextid).fadeIn();
     document.getElementById(bar).style.backgroundColor="#38610B";
@@ -54,7 +54,7 @@ function show_next(id,nextid,bar)
 function show_prev(previd,bar)
 {
   document.getElementById("account-details").style.display="none";
-  document.getElementById("user-details").style.display="none";
+  document.getElementById("adress-details").style.display="none";
   
   $("#"+previd).fadeIn();
   document.getElementById(bar).style.backgroundColor="#D8D8D8";
