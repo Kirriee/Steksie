@@ -16,8 +16,10 @@ ul {
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
-  border-radius: 0;
-  padding-top: 20px; }
+  border-radius: 0; }
+
+.navbar {
+  margin-bottom: 0px; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #82ca9c;
@@ -173,7 +175,7 @@ form select {
 /* BEGIN STYLING QUOTES */
 .item blockquote {
   border-left: none;
-  margin: 50px;
+  margin: 0px 50px;
   padding: 10px; }
 
 .item blockquote img {
