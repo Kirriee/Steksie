@@ -5,7 +5,7 @@ const app = express ()
 const session = require('express-session')
 const db = require(__dirname + '/models/db.js')
 
-app.use(express.static('static'));
+app.use(express.static(__dirname + '/static'));
 
 //setting view folder and view engine
 app.set('views','./views');
