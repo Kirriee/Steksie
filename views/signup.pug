@@ -1,0 +1,29 @@
+extends ./partials.pug
+block content
+
+	section
+		.loginpage
+			.login-wrapper
+				.login
+					#wrapper
+						form(action='/signup', method='post')
+							#account-details
+								h2 Schrijf je nu in! 
+								input.form-input(type='text', name='userName' placeholder='Wat is je naam?' autofocus)
+								input.form-input(type='text', name='email' placeholder='Wat is je email?')
+								input.form-input(type='password', name='password', placeholder='Kies een wachtwoord')
+								button.button.form-button-green.next-button(type='button', value='Next', onclick="show_next('account-details','user-details');") Volgende
+								p.message Al geregistreerd?
+									a(href="/login")  Log in 
+
+							#user-details
+								//- p.form-head User Details		
+								h2 Ga hieronder verder					
+								input.form-input(type='text', name='address' placeholder='In welke straat woon je?' autofocus)
+								input.form-input(type='number', name='houseNumber' placeholder='Wat is je huisnummer?')
+								input.form-input(type='text', name='zipcode' placeholder='Wat is je postcode?')
+								input.form-input(type='text', name='city' placeholder='In welk stad woon je?')
+									
+								button.form-button-green#previous(type='button', value='Previous', onclick="show_prev('account-details');") Previous
+								button.form-button-green#submitsignup(type='submit') Verzend
+

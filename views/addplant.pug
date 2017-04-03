@@ -1,0 +1,14 @@
+extends ./partials.pug
+block content
+	section
+		.loginpage
+			.login-wrapper
+				.login
+					form.register(action='/newplant', method='post')
+						h2 Voeg je stekje toe
+						input.form-input(type='text' placeholder='Wat voor stekje wil je delen?', name='newPlantName' required autofocus)
+						
+						textarea.form-input(type='text', placeholder='Schrijf een korte omschrijving hier', name='newDescription')
+						
+						button.form-button(type='submit') Post je stekje
+				
