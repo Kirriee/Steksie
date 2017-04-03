@@ -5,6 +5,8 @@ const app = express ()
 const session = require('express-session')
 const db = require(__dirname + '/models/db.js')
 
+app.use(express.static('static'));
+
 //setting view folder and view engine
 app.set('views','./views');
 app.set('view engine', 'pug');
@@ -20,7 +22,7 @@ app.use(session({
 	saveUninitialized: false
 }));
 
-app.use(express.static('static'));
+
 
 // ROUTES
 
