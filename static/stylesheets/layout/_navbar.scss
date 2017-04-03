@@ -42,6 +42,8 @@
 }
 .navbar-brand{
   margin-top:-5px; 
+  width:100px;
+  display:inline-block;
 
   img{
     display: inline-block;
@@ -49,9 +51,27 @@
     vertical-align: 0em;
   }
 }
+#brand{
+  margin:5px 10px;
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+
+  #brand{
+    margin: 20px 10px;
+    font-size: 20px;
+  }
+
 
 .navbar-toggle{
-  border: none;
+  width:50px;
+  display:inline-block;
+ }
+
+ .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+  background-color:$green-color;
+ }
 }
 
 /* END STYLING NAVBAR */

@@ -423,7 +423,7 @@ html {
   background: #f5f5f5;
   overflow: hidden; }
 
-#footer img {
+#logo {
   max-width: 5%;
   vertical-align: 0em; }
 
@@ -539,15 +539,29 @@ html {
   background-color: transparent; }
 
 .navbar-brand {
-  margin-top: -5px; }
+  margin-top: -5px;
+  width: 100px;
+  display: inline-block; }
   .navbar-brand img {
     display: inline-block;
     max-width: 5%;
     vertical-align: 0em; }
 
-.navbar-toggle {
-  border: none; }
+#brand {
+  margin: 5px 10px; }
 
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+  #brand {
+    margin: 20px 10px;
+    font-size: 20px; }
+
+  .navbar-toggle {
+    width: 50px;
+    display: inline-block; }
+
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #82ca9c; } }
 /* END STYLING NAVBAR */
 
 /*# sourceMappingURL=main.css.map */
