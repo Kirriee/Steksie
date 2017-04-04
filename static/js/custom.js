@@ -1,16 +1,18 @@
 // When the DOM is ready, run this function
 $(document).ready(function() {
-  //Set the carousel options
+
+  //SET THE CAROUSEL OPTIONS
   $('#quote-carousel').carousel({
   	pause: true,
   	interval: 4000,
   });
 });
 
+//FILTER FUNCTION ON OFFERS PAGE
 
 $('.category_item').click(function(){
 	var category = $(this).attr('id');
-	if(category == 'all'){
+	if(category == 'all'){                   // ALL CITIES
 		$('.plant_item').addClass('hide');
 		setTimeout(function(){
 			$('.plant_item').removeClass('hide');
@@ -24,8 +26,9 @@ $('.category_item').click(function(){
 	}
 });
 
+// SIGN UP FORM TWO PAGES
 
-function show_next(id,nextid,bar)
+function show_next(id,nextid)
 {
   var ele=document.getElementById(id).getElementsByTagName("input");
   var error=0;
@@ -43,7 +46,7 @@ function show_next(id,nextid,bar)
     document.getElementById("adress-details").style.display="none";
     
     $("#"+nextid).fadeIn();
-    document.getElementById(bar).style.backgroundColor="#38610B";
+   
   }
   else
   {
@@ -51,12 +54,12 @@ function show_next(id,nextid,bar)
   }
 }
 
-function show_prev(previd,bar)
+function show_prev(previd)
 {
   document.getElementById("account-details").style.display="none";
   document.getElementById("adress-details").style.display="none";
   
   $("#"+previd).fadeIn();
-  document.getElementById(bar).style.backgroundColor="#D8D8D8";
+ 
 }
 
