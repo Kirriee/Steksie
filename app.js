@@ -82,8 +82,8 @@ app.get('/', function (request, response){
 // BUTTON ON HOME PAGE
 app.post('/', function (request, response){
 	user = request.session.user
-	if(user === undefined) {				// IF YOU CLICK ON BUTTON AND ARE NOT LOGGED IN REDIRECT TO HOME 
-		response.redirect('/login')
+	if(user === undefined) {				// IF YOU CLICK ON BUTTON AND ARE NOT LOGGED IN REDIRECT TO SIGNUP
+		response.redirect('/signup')
 	}
 	else {
 		response.redirect('/offers')		// IF YOU CLICK ON BUTTON AND ARE LOGGED IN REDIRECT TO OFFERS
